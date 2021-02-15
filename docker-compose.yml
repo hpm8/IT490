@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  front-end:
+    build: front-end/ 
+    ports:
+      - "8080:5000"
+    environment:
+      - RABBITMQ_USER=${USER}
+      - RABBITMQ_PASS=${PASS}
+#  messaging:
+#   image: rabbitmq
+#  environment:
+#   - RABBITMQ_DEFAULT_USER=${USER}
+#  - RABBITMQ_DEFAULT_PASS=${PASS}

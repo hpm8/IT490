@@ -5,7 +5,11 @@ import time
 import logging
 import json
 
+<<<<<<< HEAD
 
+=======
+# tag::process_request[]
+>>>>>>> 1b60a598d8b4e70977c4f75666c7fe5cfe944332
 def process_request(ch, method, properties, body):
     """
     Gets a request from the queue, acts on it, and returns a response to the
@@ -49,6 +53,10 @@ def process_request(ch, method, properties, body):
         routing_key=properties.reply_to,
         body=json.dumps(response)
     )
+<<<<<<< HEAD
+=======
+# end::process_request[]
+>>>>>>> 1b60a598d8b4e70977c4f75666c7fe5cfe944332
 
 logging.basicConfig(level=logging.INFO)
 
